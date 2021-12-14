@@ -3,6 +3,7 @@
     package="com.example.certamen2leandro">
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,6 +13,9 @@
         <activity
             android:name=".ventana2"
             android:exported="true" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDPTS4E18aPAQDGFNyC-imEMjS38X-H5zo" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

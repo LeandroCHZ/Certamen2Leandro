@@ -7,21 +7,17 @@
     android:background="#45BCE8"
     tools:context=".ventana2">
 
-    <Button
-        android:id="@+id/volver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="volver"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="563dp" />
 
-
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <fragment
         android:id="@+id/map"
-        tools:context=".MainActivity"
-        android:name="com.google.android.gms.maps.SupportMapFragment" />
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="375dp"
+        android:layout_height="656dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:context=".MainActivity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
