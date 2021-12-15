@@ -37,7 +37,7 @@ public class ventana2 extends AppCompatActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions()
                 .position(Yungay)
                 .title("Salto del Itata Yungay"));
-        mMap.setMapType(googleMap.MAP_TYPE_TERRAIN);
+        mMap.setMapType(googleMap.MAP_TYPE_SATELLITE);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Yungay, 10));
 
 
