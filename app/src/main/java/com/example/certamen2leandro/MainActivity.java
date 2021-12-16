@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.util.Log;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -32,6 +31,7 @@ public class MainActivity<edad, nombre> extends AppCompatActivity {
 
     Button btnventana2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +43,9 @@ public class MainActivity<edad, nombre> extends AppCompatActivity {
             @SuppressLint("WrongViewCast")
             @Override
             public void onClick(View view) {
+
+                validacion()
+
                 Intent btnventana2 = new Intent(MainActivity.this, ventana2.class );
                 startActivity(btnventana2);
 
@@ -58,9 +61,12 @@ public class MainActivity<edad, nombre> extends AppCompatActivity {
 
     }
 
+    private void validacion() {
+
+    }
+
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         //updateUI(currentUser);
     }
