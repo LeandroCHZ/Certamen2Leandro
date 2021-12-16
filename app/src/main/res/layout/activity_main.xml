@@ -11,15 +11,15 @@
         android:id="@+id/textView"
         android:layout_width="176dp"
         android:layout_height="66dp"
-        android:text="PaisaCH"
+        android:text="Paisach"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#FAE9E9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <EditText
         android:id="@+id/txtedad"
