@@ -4,12 +4,14 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -52,9 +54,7 @@ public class MainActivity<edad, nombre> extends AppCompatActivity {
                 mAuth = FirebaseAuth.getInstance();
 
                 nombre = findViewById(R.id.btnventana2);
-                 edad = findViewById(R.id.btnventana2);
-
-
+                edad = findViewById(R.id.btnventana2);
 
             }
         });
@@ -80,21 +80,21 @@ public class MainActivity<edad, nombre> extends AppCompatActivity {
     void addOnCompleteListener(new, this OnCompleteListener<AuthResult>() {
 
     }
-        @Override
-        public void onComplete(@NonNull Task<AuthResult> task) {
-            if (task.isSuccessful()) {
+    @Override
+    public void onComplete(@NonNull Task<AuthResult> task) {
+        if (task.isSuccessful()) {
 
-                FirebaseUser user = mAuth.getCurrentUser();
+            FirebaseUser user = mAuth.getCurrentUser();
 
-            } else {
-
-
-                Toast.makeText(this, "Authentication failed.",
-                        Toast.LENGTH_SHORT).show();
-                //updateUI(null);
-            }
+        } else {
 
 
+            Toast.makeText(this, "Authentication failed.",
+                    Toast.LENGTH_SHORT).show();
+            //updateUI(null);
         }
+
+
+    }
 
 }
